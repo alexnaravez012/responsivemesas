@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+    <script src="./data/app.js"></script>
+    <link href="./fontawesome-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./data/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Denlíne@</title>
+</head>
+
+<body id="body-height">
+    <div class="uk-flex uk-flex-middle uk-flex-between uk-box-shadow-medium">
+        <a href="#">
+            <img class="logo1-size" data-src="data/logo1.png" width="100%" uk-img>
+        </a>
+        <div class="uk-flex uk-flex-middle">
+            <!--Boton contenido menu usuario-->
+            <button onclick="openMenu('options')" class="button-menu" type="button" style="padding-left: 30px;">
+                     <i class="far fa-user-circle color-blue cursor-pointer" style="font-size: 30PX;"></i>
+            </button>
+            <!--Boton contenido menu-->
+            <button onclick="openMenu('user')" class="button-menu" type="button">
+                    <i class="fas fa-bars color-blue cursor-pointer" style="font-size: 30PX;"></i>
+            </button>
+        </div>
+    </div>
+    <!--Menu bars-->
+    <div id="menu-users" class="background-menus">
+        <div class="style-menu-users">
+            <!--Menu bars overflow-->
+            <ul class="uk-padding-remove">
+                <div class="uk-flex">
+                    <div class="style-overflow-ventas" id="div-scroll" onscroll="repeatMenu()">
+                        <ul class="uk-list" id="list-user">
+                            <div>
+                                <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu">
+                                    <img src="data/1.png " alt=" ">
+                                    <h4 class="uk-text-bold uk-margin-remove color-blue">Ventas</h4>
+                                </li>
+                            </div>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/2.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Compras</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/3.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Entradas</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/4.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Salidas</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/5.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Devoluciones</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/6.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Catalogo de productos</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/7.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Inventario</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/8.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Reportes</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/9.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Terceros</h4>
+                            </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/10.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Contabilidad</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!--Menu users-->
+    <div id="menu-options" class="background-menus">
+        <div class="uk-margin-remove-right style-menu-bars">
+            <ul>
+                <ul class="uk-nav-default" uk-nav>
+                    <li class="uk-active">
+                        <a href="#">
+                            <h4 class="uk-text-bold">Juan Carlos Botero Balcazar</h4>
+                        </a>
+                        <li class="uk-parent">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="uk-flex uk-flex-between uk-flex-middle">
+                                    <h4 class="uk-margin-remove">Sysware</h4>
+                                    <i class="fas fa-caret-down" style="font-size: 20px;"></i>
+                                </div>
+                            </a>
+                            <ul class="uk-nav-sub">
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">Tienda Don Lauro</a></h4>
+                                </li>
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">JDS BIKES CAÑAS GORDAS</a></h4>
+                                </li>
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">Sysware</a></h4>
+                                </li>
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">Ciudad 2000</a></h4>
+                                </li>
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">Rapitin</a></h4>
+                                </li>
+                                <li>
+                                    <h4 class="uk-margin-remove"><a href="#" style="text-decoration: none;">+Kota Gourmet</a></h4>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent">
+                            <a href="#">
+                                <div class="uk-flex uk-flex-between uk-flex-middle">
+                                    <h4 class="uk-margin-remove">Información de usuario</h4>
+                                    <i class="fas fa-caret-down" style="font-size: 20px;"></i>
+                                </div>
+                            </a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="uk-flex uk-flex-middle uk-box-shadow-medium  padding-horizontal-10">
+            <button onclick="openMenu('information')" class="button-menu cursor-pointer" type="button" style="padding-right: 5px;">
+                <img class="logo13-size uk-margin-remove" src="./data/13.png">
+             </button>
+            <div class="uk-flex uk-flex-middle">
+                <h4 class="uk-margin-top" style="margin-right: 10px">Tienda:</h4>
+                <div class="uk-inline">
+                    <a class="uk-flex uk-flex-middle uk-margin-remove-right" style="width: 90%;" href="#">
+                        <button class="dropdown-buttom cursor-pointer">
+                            <div class="uk-flex uk-flex-middle">
+                                <img class="logo2-size" src="./data/logo2.png">
+                                 <i class="fas fa-caret-down uk-margin-remove font-size-18" style="padding-left:10px;"></i>
+                            </div>
+                        </button>
+                    </a>
+                    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle" style="margin-right: 10px;">
+                <h4 class="uk-margin-remove">Caja:</h4>
+                <a class="uk-flex uk-flex-middle uk-margin-remove" style="width: 50%; text-decoration: none;;" href="#">
+                    <button class="dropdown-buttom cursor-pointer">
+                        <div class="uk-flex uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">1</h4>
+                            <i class="fas fa-caret-down" style="margin-left: 10px; font-size: 18px;"></i>
+                        </div>
+                    </button>
+                </a>
+                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-information" class="background-menus">
+        <ul class="uk-nav-default style-menu-information" style="padding-left: 20px; padding-top: 5px;" uk-nav>
+            <div>
+                <ul class="uk-nav-default uk-nav-parent-icon " uk-nav>
+                    <li class=" uk-margin-remove uk-flex uk-flex-middle">
+                        <h5 class="uk-text-bold uk-margin-remove ">Facturas:</h5>
+                        <p style="font-size: 120%; ">1</p>
+                    </li>
+                    <div class="uk-text-middle margin-top-20 ">
+                        <h5 class="uk-text-bold uk-margin-remove ">Modo:</h5>
+                        <h5 class="uk-text-bold uk-margin-remove " style="color: #19bb21 ">ONLINE</h5>
+                    </div>
+                    <hr>
+                    <div class="uk-text-middle margin-top-20 ">
+                        <h5 class="uk-text-bold uk-margin-remove ">Offline</h5>
+                    </div>
+                    <hr>
+                    <div class="uk-text-middle margin-top-20 ">
+                        <h5 class="uk-text-bold uk-margin-remove ">Opciones de caja</h5>
+                    </div>
+                    <hr>
+                    <div class="uk-text-middle margin-top-20" style="padding-bottom:20px ;">
+                        <h5 class="uk-text-bold uk-margin-remove">Productos mas vendidos</h5>
+                    </div>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <div style="display: none;">
+        <div class="uk-flex uk-flex-wrap">
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-1">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>
+                </button>
+                <div id="modal-1" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-2">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>
+                </button>
+                <div id="modal-2" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-3">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>
+                </button>
+                <div id="modal-3" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-4">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-4" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-5">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-5" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-6">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-6" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-7">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-7" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-8">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-8" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-8">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-8" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="uk-card uk-card-default uk-card-body card-table-responsive" uk-toggle="target: #modal-8">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                        <h5 class="uk-margin-remove" style="font-weight: 500;">27 minutos</h5>
+                    </div>
+                     <h5 class="uk-text-bold uk-margin-remove" style="font-weight: 500; padding-top: 10px;">Mesero:</h5>
+                     <h5 class="uk-margin-remove" style="font-weight: 500; ">Camilo de la cruz</h5>
+                     <h5 style="font-weight: 500; margin-top: 10px;">$0.00</h5>                </button>
+                <div id="modal-8" style="padding-top: 15%;" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body modal-card-responsive">
+                        <div>
+                            <h4 class="uk-margin-remove uk-text-center color-blue uk-text-bold">¿Quieres abrir la mesa 1?</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-center" style="margin-top: 10px;">
+                            <button class="button-modal-responsive" style="margin-right: 10px !important;" type="button">Abrir</button>
+                            <button class="uk-modal-close button-modal-responsive" type="button">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div class="container-open-table-responsive">
+            <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-bottom: 20px;">
+                <i class="fas fa-caret-left uk-margin-remove color-blue font-size-18"></i>
+                <h6 class="uk-text-bold uk-margin-remove color-blue" style="padding-left: 5px;">Mesas/Mesa1</h6>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <h4 class="uk-text-bold uk-margin-remove">Mesa 1</h4>
+                <h5 class="uk-margin-remove uk-text-bold padding-horizontal-20">Tiempo: 27 minutos</h5>
+                <h5 class="uk-margin-remove uk-text-bold">$0.00</h5>
+            </div>
+            <div class="uk-flex uk-flex middle" style="padding-top: 20px;">
+                <h5 class="uk-margin-remove"> <span class="uk-text-bold">Mesero:</span> Camilo de la cruz</h5>
+                <i class="fas fa-caret-down uk-margin-remove font-size-18" style="padding-left: 5px;"></i>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div style="padding: right 10px;">
+                    <div>
+                        <input class="input-line-responsive" type="text" placeholder="Documento tercero">
+                    </div>
+                    <div>
+                        <input class="input-line-responsive" type="text" placeholder="Notas">
+                    </div>
+                </div>
+                <div style="padding-left: 12px;">
+                    <button class="button-add-product-responsive uk-text-bold">Agregar Producto</button>
+                    <button class="button-add-product-responsive uk-text-bold" style="background-color: #B3C3FF; margin-top: 10px;">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <!--Navbar tipo de busqueda-->
+        <ul uk-tab>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 padding-horizontal-30 uk-active uk-box-shadow-hover-large">
+                    <a href="#" style="text-decoration:none">
+                        <h4 class="uk-text-center uk-text-bold color-blue padding-vertical-10" style="padding-left: 30px;">Productos por lista</h4>
+                    </a>
+                </li>
+            </div>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large ">
+                    <a href="# " style="text-decoration:none ">
+                        <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-vertical-10 ">Productos por categorias</h4>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <ul uk-tab>
+            <div class="uk-width-3-5 uk-padding-remove-left">
+                <li class="height-80 uk-active uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-middle">
+                        <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Categorías</button>
+                        <h6 class="uk-margin-remove uk-text-lighter" style="padding-left:5px ; color: grey;">LaFerra>Tienda</h6>
+                    </div>
+                </li>
+            </div>
+            <div class="uk-width-2-5 uk-padding-remove-right" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large uk-flex uk-flex-middle" style="width: 88%; padding-left: 20px;">
+                    <a href="#" style="text-decoration:none;">
+                        <div class=" background-green-buy ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <h5 class="uk-margin-remove padding-horizontal-20 ">0$</h5>
+                                <div class="uk-flex uk-flex-middle ">
+                                    <div class="hr-vertical "></div>
+                                    <a class="padding-horizontal-20 " style="position: relative; " href=" ">
+                                        <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                                        <h6 class="text-img-buy " style="position: absolute; ">0</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <!--Contenido Busqueda por categorias-->
+        <div style="padding: 20px;">
+            <div class="uk-flex uk-flex-middle ">
+                <div class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold ">Mocacines</h5>
+                </div>
+                <div class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+                </div>
+            </div>
+            <h3 class="uk-text-bold ">Mocacines</h3>
+            <div class="uk-flex " style="margin-top: 5px; ">
+                <div class="uk-width-1-3 " style="position: relative; ">
+                    <button uk-toggle="target: #modal-item-1" class="button-select-img cursor-pointer">
+                    <div class="img-items-products-add " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                </button>
+                    <div id="modal-item-1" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">AK116BIS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="uk-text-right">
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                <button class="uk-button uk-button-primary" type="button">Save</button>
+                            </p>
+                        </div>
+                    </div>
+                    <a href=" ">
+                        <img class="like-size " style="position: absolute; " src="./data/Like-activado.png " alt=" ">
+                    </a>
+                </div>
+                <div class="uk-width-1-3 uk-flex uk-flex-middle" style="padding-left: 10px;">
+                    <div>
+                        <h5 class="uk-text-bold uk-margin-remove ">AK116BIS</h5>
+                        <h5 class="uk-margin-remove ">75.000$</h5>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
+                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add uk-box-shadow-large ">Agregar</button>
+                </div>
+            </div>
+            <div class="uk-flex " style="margin-top: 5px; ">
+                <div class="uk-width-1-3 " style="position: relative; ">
+                    <button uk-toggle="target: #modal-item-2" class="button-select-img cursor-pointer">
+                    <div class="img-items-products-add " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                </button>
+                    <div id="modal-item-2" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body">
+                            <h2 class="uk-modal-title">LONDON SUEDE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="uk-text-right">
+                                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                <button class="uk-button uk-button-primary" type="button">Save</button>
+                            </p>
+                        </div>
+                    </div>
+                    <a href=" ">
+                        <img class="like-size " style="position: absolute; " src="./data/Like-desactivado.png " alt=" ">
+                    </a>
+                </div>
+                <div class="uk-width-1-3 uk-flex uk-flex-middle" style="padding-left: 10px;">
+                    <div>
+                        <h5 class="uk-text-bold uk-margin-remove ">LONDON SUEDE</h5>
+                        <h5 class="uk-margin-remove ">75.000$</h5>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
+                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add uk-box-shadow-large ">Agregar</button>
+                </div>
+            </div>
+            <div class="uk-flex " style="margin-top: 5px; ">
+                <div class="uk-width-1-3 " style="position: relative; ">
+                    <div style="position: relative; ">
+                        <button uk-toggle="target: #modal-item-3" class="button-select-img cursor-pointer">
+                         <div class="img-items-products-add " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    </button>
+                        <div id="modal-item-3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">EDERA SPORT MONACO</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                                <p class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                                </p>
+                            </div>
+                        </div>
+                        <a href=" ">
+                            <img class="like-size " style="position: absolute; " src="./data/Like-desactivado.png " alt=" ">
+                        </a>
+                    </div>
+                    <h6 class="discount uk-text-center " style="position: absolute; ">25%</h6>
+                </div>
+                <div class="uk-width-1-3 uk-flex uk-flex-middle uk-flex-center" style="padding-left: 10px;">
+                    <div>
+                        <h5 class="uk-text-bold uk-margin-remove ">EDERA SPORT MONACO</h5>
+                        <h5 class="uk-margin-remove ">75.000$</h5>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
+                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add uk-box-shadow-large ">Agregar</button>
+                </div>
+            </div>
+            <div class="uk-flex " style="margin-top: 5px; ">
+                <div class="uk-width-1-3 " style="position: relative; ">
+                    <div style="position: relative; ">
+                        <button uk-toggle="target: #modal-item-4" class="button-select-img cursor-pointer">
+                          <div class="img-items-products-add " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    </button>
+                        <div id="modal-item-4" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <h2 class="uk-modal-title">NAVY FERCA SPORT</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                    laborum.
+                                </p>
+                                <p class="uk-text-right">
+                                    <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                                    <button class="uk-button uk-button-primary" type="button">Save</button>
+                                </p>
+                            </div>
+                        </div>
+                        <a href=" ">
+                            <img class="like-size " style="position: absolute; " src="./data/Like-desactivado.png " alt=" ">
+                        </a>
+                    </div>
+                    <h6 class="discount uk-text-center " style="position: absolute; ">50%</h6>
+                </div>
+                <div class="uk-width-1-3 uk-flex uk-flex-middle uk-flex-center" style="padding-left: 10px;">
+                    <div>
+                        <h5 class="uk-text-bold uk-margin-remove ">NAVY FERCA SPORT</h5>
+                        <h5 class="uk-margin-remove ">75.000$</h5>
+                    </div>
+                </div>
+                <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
+                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add uk-box-shadow-large ">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <!--Navbar tipo de busqueda-->
+        <ul uk-tab>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 padding-horizontal-30 uk-active uk-box-shadow-hover-large">
+                    <a href="#" style="text-decoration:none">
+                        <h4 class="uk-text-center uk-text-bold color-blue padding-vertical-10" style="padding-left: 30px;">Productos por lista</h4>
+                    </a>
+                </li>
+            </div>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large ">
+                    <a href="# " style="text-decoration:none ">
+                        <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-vertical-10 ">Productos por categorias</h4>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <ul uk-tab>
+            <div class="uk-width-3-5 uk-padding-remove-left">
+                <li class="height-80 uk-active uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-middle">
+                        <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Categorías</button>
+                        <h6 class="uk-margin-remove uk-text-lighter" style="padding-left:5px ; color: grey;">LaFerra>Tienda</h6>
+                    </div>
+                </li>
+            </div>
+            <div class="uk-width-2-5 uk-padding-remove-right" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large uk-flex uk-flex-middle" style="width: 88%; padding-left: 20px;">
+                    <a href="#" style="text-decoration:none;">
+                        <div class=" background-green-buy ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <h5 class="uk-margin-remove padding-horizontal-20 ">0$</h5>
+                                <div class="uk-flex uk-flex-middle ">
+                                    <div class="hr-vertical "></div>
+                                    <a class="padding-horizontal-20 " style="position: relative; " href=" ">
+                                        <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                                        <h6 class="text-img-buy " style="position: absolute; ">0</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <!--Contenido busqueda por lista-->
+        <div class="uk-flex">
+            <div style="width: 100%; max-height: 280px !important; overflow: auto;">
+                <ul class="uk-list">
+                    <li class="item-list uk-margin-remove ">Aguardiente botella - 4500117 - 17</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Aguila light - 4500128 - 25</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Agua con gas - 4500108 - 15</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Agua grande - 4500107 - 7</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Aguardiente botella - 4500117 - 17</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Aguila light - 4500128 - 25</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Agua con gas - 4500108 - 15</li>
+                    <div class="hr-tab uk-margin-remove "></div>
+                    <li class="item-list uk-margin-remove ">Agua grande - 4500107 - 7</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="uk-flex uk-flex-middle uk-flex-between uk-box-shadow-medium padding-horizontal-20 height-80 ">
+                <h3 class="uk-margin-remove ">Productos seleccionados: 1</h3>
+                <i class="fas fa-caret-left uk-margin-remove " style="padding-right: 10px; font-size: 25px; "></i>
+            </div>
+        </div>
+        <div style="padding-top: 15px;">
+            <div class="uk-flex uk-flex-middle uk-flex-around shadow-down-responsive" style="padding-bottom: 10px ;">
+                <div class="uk-text-middle uk-text-left ">
+                    <h6 class="uk-text-bold uk-margin-remove font-size-17 ">Agua con gas - 4500108 - 15</h6>
+                    <div uk-form-custom="target:> * > span:first-child" class="uk-margin-remove" style="padding-top: 10px">
+                        <select>
+                            <option value=" ">Código proveedor</option>
+                            <option value="1 ">Option 01</option>
+                        </select>
+                        <button class="form-select-responsive" type="button " tabindex="-1 ">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down "></span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-flex uk-flex-middle">
+                        <i class="fas fa-minus color-green font-size-18 cursor-pointer"></i>
+                        <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-18">1</h6>
+                        <i class="fas fa-plus color-green font-size-18 cursor-pointer"></i>
+                    </div>
+                    <h6 class="uk-margin-remove uk-text-center font-size-12 cursor-pointer">Quitar</h6>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center" style="padding-top: 30px; padding-bottom: 30px;">
+                <button class="button-finish-order">Completar Orden</button>
+            </div>
+        </div>
+    </div>
+    <div style="display: none; ">
+        <!--Navbar tipo de busqueda-->
+        <ul uk-tab>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 padding-horizontal-30 uk-active uk-box-shadow-hover-large">
+                    <a href="#" style="text-decoration:none">
+                        <h4 class="uk-text-center uk-text-bold color-blue padding-vertical-10" style="padding-left: 30px;">Productos por lista</h4>
+                    </a>
+                </li>
+            </div>
+            <div class="uk-width-1-2" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large ">
+                    <a href="# " style="text-decoration:none ">
+                        <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-vertical-10 ">Productos por categorias</h4>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <ul uk-tab>
+            <div class="uk-width-3-5 uk-padding-remove-left">
+                <li class="height-80 uk-active uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <div class="uk-flex uk-flex-middle">
+                        <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Categorías</button>
+                        <h6 class="uk-margin-remove uk-text-lighter" style="padding-left:5px ; color: grey;">LaFerra>Tienda</h6>
+                    </div>
+                </li>
+            </div>
+            <div class="uk-width-2-5 uk-padding-remove-right" style="padding: 0px;">
+                <li class="height-80 uk-box-shadow-hover-large uk-flex uk-flex-middle" style="width: 88%; padding-left: 20px;">
+                    <a href="#" style="text-decoration:none;">
+                        <div class=" background-green-buy ">
+                            <div class="uk-flex uk-flex-middle ">
+                                <h5 class="uk-margin-remove padding-horizontal-20 ">0$</h5>
+                                <div class="uk-flex uk-flex-middle ">
+                                    <div class="hr-vertical "></div>
+                                    <a class="padding-horizontal-20 " style="position: relative; " href=" ">
+                                        <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                                        <h6 class="text-img-buy " style="position: absolute; ">0</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <!--Contenido tu canasta de compra-->
+        <div style="padding: 20px;">
+            <div class="uk-flex uk-flex-middle ">
+                <div class="icon-close uk-flex uk-flex-middle uk-flex-center ">
+                    <i class="fas fa-times "></i>
+                </div>
+                <div class="padding-horizontal-20 ">
+                    <h1 class="uk-text-bold uk-margin-remove ">Tu Canasta</h1>
+                    <h4 class="uk-text-light uk-margin-remove ">Volver a tienda</h4>
+                </div>
+            </div>
+            <div uk-grid>
+                <div class="uk-width-1-2 " style="padding-top: 20px; ">
+                    <div style="position: relative; ">
+                        <div class="img-items-products-basket " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                        <h6 class="discount-2 uk-flex uk-flex-middle uk-flex-center " style="position: absolute; ">-25%</h6>
+                    </div>
+                    <div style="padding-top: 20px; padding-left:10px; ">
+                        <div class="uk-flex uk-flex-middle uk-align-center ">
+                            <div class="icon-plus-minus uk-flex uk-flex-middle uk-flex-center " style="margin-right: 20px; ">
+                                <i class="fas fa-plus "></i>
+                            </div>
+                            <h2 class="uk-text-bold uk-margin-remove ">1</h2>
+                            <div class="icon-plus-minus uk-flex uk-flex-middle uk-flex-center " style="margin-left: 20px; ">
+                                <i class="fas fa-minus "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 uk-margin-remove padding-horizontal-5 " style="padding-top: 30px; ">
+                    <h5 class="uk-margin-remove uk-text-bold ">EDERA SPORT MONACO</h5>
+                    <h5 class="uk-margin-remove uk-text-bold ">4500108 - 15</h5>
+                    <h6 class="uk-margin-remove " style="padding-top: 20px; ">Valor unitario: 75,000$</h6>
+                    <h6 class="uk-margin-remove ">Impuesto: 0%</h6>
+                    <div style="padding-top: 20px; ">
+                        <select class="form-select " style="width: 90% !important; ">
+                            <option class="select-items " value=" ">Bodega 1</option>
+                            <option class="select-items " value=" ">Opción 1</option>
+                        </select>
+                    </div>
+                    <h5 class="uk-margin-remove " style="padding-top: 20px; ">Total: 75,000$</h5>
+                </div>
+            </div>
+            <div class="uk-margin-remove-top " uk-grid>
+                <div class="uk-width-1-2 " style="padding-top: 20px; ">
+                    <div style="position: relative; ">
+                        <div class="img-items-products-basket " style="background-image: url(./data/shoes1.png); " uk-img></div>
+                        <h6 class="discount-2 uk-flex uk-flex-middle uk-flex-center " style="position: absolute; ">-25%</h6>
+                    </div>
+                    <div style="padding-top: 20px; padding-left:10px; ">
+                        <div class="uk-flex uk-flex-middle uk-align-center ">
+                            <div class="icon-plus-minus uk-flex uk-flex-middle uk-flex-center " style="margin-right: 20px; ">
+                                <i class="fas fa-plus "></i>
+                            </div>
+                            <h2 class="uk-text-bold uk-margin-remove ">1</h2>
+                            <div class="icon-plus-minus uk-flex uk-flex-middle uk-flex-center " style="margin-left: 20px; ">
+                                <i class="fas fa-minus "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 uk-margin-remove padding-horizontal-5 " style="padding-top: 30px; ">
+                    <h5 class="uk-margin-remove uk-text-bold ">EDERA SPORT MONACO</h5>
+                    <h5 class="uk-margin-remove uk-text-bold ">4500108 - 15</h5>
+                    <h6 class="uk-margin-remove " style="padding-top: 20px; ">Valor unitario: 75,000$</h6>
+                    <h6 class="uk-margin-remove ">Impuesto: 0%</h6>
+                    <div style="padding-top: 20px; ">
+                        <select class="form-select " style="width: 90% !important; ">
+                            <option class="select-items " value=" ">Bodega 1</option>
+                            <option class="select-items " value=" ">Opción 1</option>
+                        </select>
+                    </div>
+                    <h5 class="uk-margin-remove " style="padding-top: 20px; ">Total: 75,000$</h5>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center" style="padding-top: 20px; padding-bottom: 20px;">
+                <button class="button-finish-order">Completar Orden</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
