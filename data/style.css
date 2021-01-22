@@ -500,7 +500,7 @@
     border: none;
     border-radius: 15px;
     background-color: #B1FFA6;
-    width: 150px;
+    width: 200px;
     height: 40px;
     font-size: 15px;
     cursor: pointer;
@@ -535,6 +535,7 @@
 .img-setup-size-responsive {
     height: 35px;
     width: 80px;
+    margin-left: 10px;
 }
 
 .order-status-nav {
@@ -587,4 +588,24 @@
 .modal-setup-responsive {
     border-radius: 20px;
     margin-top: 250px;
+}
+
+.modal-process-order-responsive {
+    border-radius: 15px;
+    width: 400px !important;
+    margin-top: 250px;
+}
+
+.button-modal-cancel-responsive {
+    height: 38px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #3a6193;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+.button-modal-cancel-responsive:focus {
+    outline: 0;
 }
