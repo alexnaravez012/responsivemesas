@@ -672,3 +672,12 @@
     height: 40px;
     width: 40px;
 }
+
+.img-items-galery-relation {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    margin: 5px;
+}
