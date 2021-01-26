@@ -22,6 +22,10 @@ function openMenu(type) {
         document.getElementById("menu-users").classList.remove("show");
         document.getElementById("menu-options").classList.remove("show");
     }
+    if (type == 'categories') {
+        document.getElementById("menu-categories").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-categories").classList.toggle("show");
+    }
 }
 
 function repeatMenu() {

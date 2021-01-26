@@ -35,6 +35,11 @@
     padding-right: 20px;
 }
 
+.padding-horizontal-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .padding-vertical-10 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -183,10 +188,18 @@
     border-radius: 20px;
     border: 1px black solid;
     font-size: 16px;
-    padding-bottom: 1px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-left: 35px;
+    width: 200px;
+    height: 40px;
+}
+
+.button-select-search-option {
+    width: 200px;
+    height: 80px;
+}
+
+.button-select-search-cat {
+    width: 250px;
+    height: 80px;
 }
 
 .img-size-1 {
@@ -204,11 +217,13 @@
 .background-green-buy {
     background-color: #98FB98;
     border-radius: 5px;
+    width: 100px;
+    padding-right: 20px;
 }
 
 .text-img-buy {
     color: black;
-    left: 34px;
+    left: 15px;
     bottom: -10px;
 }
 
@@ -322,6 +337,15 @@
     padding-bottom: 10px;
     padding-right: 20px;
     padding-top: 20px;
+}
+
+.style-menu-categories {
+    background-color: white;
+    margin-right: 100px !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
 .style-menu-users {
