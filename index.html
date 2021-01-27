@@ -80,6 +80,10 @@
                                 <img class="padding-right-30 " src="data/10.png " alt=" ">
                                 <h4 class="uk-text-bold uk-margin-remove color-blue ">Contabilidad</h4>
                             </li>
+                            <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu padding-top-20 ">
+                                <img class="padding-right-30 " src="data/14.png " alt=" ">
+                                <h4 class="uk-text-bold uk-margin-remove color-blue ">Mesas</h4>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -550,21 +554,40 @@
                 </div>
             </div>
             <!--Contenido Busqueda por categorias-->
-            <div style="padding: 20px;">
-                <div class="uk-flex uk-flex-middle ">
-                    <div class="uk-text-center " style="margin-right: 20px; ">
-                        <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
-                        <h5 class="uk-margin-remove uk-text-bold ">Mocacines</h5>
-                    </div>
-                    <div class="uk-text-center " style="margin-right: 20px; ">
-                        <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
-                        <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
-                    </div>
-                    <div class="uk-text-center " style="margin-right: 20px; ">
-                        <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
-                        <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
-                    </div>
+            <div class="uk-flex uk-flex-middle scrollhorizontal">
+                <div class="uk-text-center " style="margin-right: 20px; ">
+                    <div onclick="openMenu('subcategories')" class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold ">Mocacines</h5>
                 </div>
+                <div onclick="openMenu('subcategories')" class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+                </div>
+                <div onclick="openMenu('subcategories')" class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+                </div>
+                <div onclick="openMenu('subcategories')" class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+                </div>
+                <div onclick="openMenu('subcategories')" class="uk-text-center " style="margin-right: 20px; ">
+                    <div class="img-items-products cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                    <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+                </div>
+            </div>
+            <div id="menu-subcategories" class="background-menus">
+                <div class="uk-margin-remove-right style-menu-categories">
+                    <ul class="uk-list">
+                        <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocacines formales</h5>
+                        <div class="hr-tab uk-margin-remove"></div>
+                        <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocacines informales</h5>
+                        <div class="hr-tab uk-margin-remove"></div>
+                        <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocaciones deportivos</h5>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding: 20px;">
                 <h3 class="uk-text-bold ">Mocacines</h3>
                 <div class="uk-flex " style="margin-top: 5px;">
                     <div class="uk-width-1-3" style="position: relative;">
