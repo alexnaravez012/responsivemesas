@@ -15,6 +15,7 @@
 </head>
 
 <body id="body-height">
+    <!-- Navbar -->
     <div class="uk-flex uk-flex-middle uk-flex-between uk-box-shadow-medium">
         <a href="#">
             <img class="logo1-size" data-src="data/logo1.png" width="100%" uk-img>
@@ -678,50 +679,38 @@
                 <button class=" uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search " style="margin-left: 15px;">Recargar</button>
             </div>
         </div>
-        <ul uk-tab>
-            <div class="uk-width-1-2" style="padding: 0px;">
-                <li class="height-80 padding-horizontal-30 uk-active uk-box-shadow-hover-large">
-                    <a href="#" style="text-decoration:none">
-                        <h4 class="uk-text-center uk-text-bold color-blue padding-vertical-10" style="padding-left: 30px;">Productos por lista</h4>
-                    </a>
-                </li>
+        <div class="uk-flex uk-flex-middle">
+            <div class="uk-width-1-2">
+                <div class="button-select-search-option uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-horizontal-40">Productos por lista</h4>
+                </div>
             </div>
-            <div class="uk-width-1-2" style="padding: 0px;">
-                <li class="height-80 uk-box-shadow-hover-large ">
-                    <a href="# " style="text-decoration:none ">
-                        <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-vertical-10 ">Productos por categorias</h4>
-                    </a>
-                </li>
+            <div class="uk-width-1-2">
+                <div class="button-select-search-option uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove">Productos por categorias</h4>
+                </div>
             </div>
-        </ul>
-        <ul uk-tab>
-            <div class="uk-width-3-5 uk-padding-remove-left">
-                <li class="height-80 uk-active uk-box-shadow-hover-large uk-flex uk-flex-middle">
-                    <div class="uk-flex uk-flex-middle">
-                        <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Categorías</button>
-                        <h6 class="uk-margin-remove uk-text-lighter" style="padding-left:5px ; color: grey;">LaFerra>Tienda</h6>
-                    </div>
-                </li>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <div class="button-select-search-cat uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center">
+                <button onclick="openMenu('categories')" class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Zapatos</button>
             </div>
-            <div class="uk-width-2-5 uk-padding-remove-right" style="padding: 0px;">
-                <li class="height-80 uk-box-shadow-hover-large uk-flex uk-flex-middle" style="width: 88%; padding-left: 20px;">
-                    <a href="#" style="text-decoration:none;">
-                        <div class=" background-green-buy ">
-                            <div class="uk-flex uk-flex-middle ">
-                                <h5 class="uk-margin-remove padding-horizontal-20 ">0$</h5>
-                                <div class="uk-flex uk-flex-middle ">
-                                    <div class="hr-vertical "></div>
-                                    <a class="padding-horizontal-20 " style="position: relative; " href=" ">
-                                        <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
-                                        <h6 class="text-img-buy " style="position: absolute; ">0</h6>
-                                    </a>
-                                </div>
-                            </div>
+            <div class="button-select-search-cat uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center" style="width: 170px;">
+                <div class="background-green-buy">
+                    <div class="uk-flex uk-flex-middle" style="padding-left: 20px; width: 100px;">
+                        <h5 class="uk-margin-remove" style="padding-right:20px ;">0$</h5>
+                        <div class="uk-flex uk-flex-middle" style="width: 100px !important;">
+                            <div class="hr-vertical" style="margin-right: 10px;"></div>
+                            <a style="position: relative; " href=" ">
+                                <img class="img-size-1" src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                                <h6 class="text-img-buy" style="position: absolute; ">0</h6>
+                            </a>
                         </div>
-                    </a>
-                </li>
+                    </div>
+                </div>
             </div>
-        </ul>
+        </div>
+
         <!--Contenido busqueda por lista-->
         <div class="uk-flex">
             <div style="width: 100%; max-height: 280px !important; overflow: auto;">
@@ -913,59 +902,46 @@
     <!--Canasta de compra-->
     <div style="display: none; ">
         <!--Navbar tipo de busqueda-->
-        <div class="uk-flex uk-flex-middle uk-box-shadow-medium uk-flex-between padding-horizontal-20 padding-vertical-10 ">
+        <div class="uk-flex uk-flex-middle uk-box-shadow-medium uk-flex-between padding-horizontal-20 padding-vertical-10">
             <i class="fas fa-search " style="color: black; font-size: 20px; padding-right: 10px ; "></i>
-            <form class="uk-search uk-search-medium ">
+            <form class="uk-search uk-search-medium">
                 <input class="uk-search-input uk-text-light form-search " type="search " placeholder="Buscador de productos ">
             </form>
             <div>
-                <button class=" uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search " style="margin-left: 15px; ">Recargar</button>
+                <button class=" uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search " style="margin-left: 15px;">Recargar</button>
             </div>
         </div>
-        <ul uk-tab>
-            <div class="uk-width-1-2 " style="padding: 0px; ">
-                <li class="height-80 padding-horizontal-30 uk-active uk-box-shadow-hover-large ">
-                    <a href="# " style="text-decoration:none ">
-                        <h4 class="uk-text-center uk-text-bold color-blue padding-vertical-10 " style="padding-left: 30px; ">Productos por lista</h4>
-                    </a>
-                </li>
+        <div class="uk-flex uk-flex-middle">
+            <div class="uk-width-1-2">
+                <div class="button-select-search-option uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-horizontal-40">Productos por lista</h4>
+                </div>
             </div>
-            <div class="uk-width-1-2 " style="padding: 0px; ">
-                <li class="height-80 uk-box-shadow-hover-large ">
-                    <a href="# " style="text-decoration:none ">
-                        <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-vertical-10 ">Productos por categorias</h4>
-                    </a>
-                </li>
+            <div class="uk-width-1-2">
+                <div class="button-select-search-option uk-box-shadow-hover-large uk-flex uk-flex-middle">
+                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove">Productos por categorias</h4>
+                </div>
             </div>
-        </ul>
-        <ul uk-tab>
-            <div class="uk-width-3-5 uk-padding-remove-left ">
-                <li class="height-80 uk-active uk-box-shadow-hover-large uk-flex uk-flex-middle ">
-                    <div class="uk-flex uk-flex-middle ">
-                        <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat ">Categorías</button>
-                        <h6 class="uk-margin-remove uk-text-lighter " style="padding-left:5px ; color: grey; ">LaFerra>Tienda</h6>
-                    </div>
-                </li>
+        </div>
+        <div class="uk-flex uk-flex-middle">
+            <div class="button-select-search-cat uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center">
+                <button onclick="openMenu('categories')" class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-search-cat">Zapatos</button>
             </div>
-            <div class="uk-width-2-5 uk-padding-remove-right " style="padding: 0px; ">
-                <li class="height-80 uk-box-shadow-hover-large uk-flex uk-flex-middle " style="width: 88%; padding-left: 20px; ">
-                    <a href="# " style="text-decoration:none; ">
-                        <div class=" background-green-buy ">
-                            <div class="uk-flex uk-flex-middle ">
-                                <h5 class="uk-margin-remove padding-horizontal-20 ">0$</h5>
-                                <div class="uk-flex uk-flex-middle ">
-                                    <div class="hr-vertical "></div>
-                                    <a class="padding-horizontal-20 " style="position: relative; " href=" ">
-                                        <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
-                                        <h6 class="text-img-buy " style="position: absolute; ">0</h6>
-                                    </a>
-                                </div>
-                            </div>
+            <div class="button-select-search-cat uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center" style="width: 170px;">
+                <div class="background-green-buy">
+                    <div class="uk-flex uk-flex-middle" style="padding-left: 20px; width: 100px;">
+                        <h5 class="uk-margin-remove" style="padding-right:20px ;">0$</h5>
+                        <div class="uk-flex uk-flex-middle" style="width: 100px !important;">
+                            <div class="hr-vertical" style="margin-right: 10px;"></div>
+                            <a style="position: relative; " href=" ">
+                                <img class="img-size-1" src="./data/Carrito-de-compras.png " alt=" " uk-img>
+                                <h6 class="text-img-buy" style="position: absolute; ">0</h6>
+                            </a>
                         </div>
-                    </a>
-                </li>
+                    </div>
+                </div>
             </div>
-        </ul>
+        </div>
         <!--Contenido tu canasta de compra-->
         <div style="padding: 20px; ">
             <div class="uk-flex uk-flex-middle ">
