@@ -496,7 +496,7 @@
         </div>
     </div>
     <!--Agregar producto-->
-    <div style="display: inline;">
+    <div style="display: none;">
         <div>
             <!--Navbar tipo de busqueda-->
             <div class="uk-flex uk-flex-middle uk-box-shadow-medium uk-flex-between padding-horizontal-20 padding-vertical-10">
@@ -589,7 +589,8 @@
                 </div>
             </div>
             <div style="padding: 20px;">
-                <h3 class="uk-text-bold ">Mocacines</h3>
+                <h6 class="uk-margin-remove uk-text-muted">Zapatos > Mocacines > Mocacines Formales</h6>
+                <h3 class="uk-text-bold uk-margin-remove" style="padding-top: 5px;">Mocacines</h3>
                 <div class="uk-flex " style="margin-top: 5px;">
                     <div class="uk-width-1-3" style="position: relative;">
                         <div class="img-items-products-add" style="background-image: url(./data/shoes1.png);" uk-img></div>
@@ -769,7 +770,7 @@
         </div>
     </div>
     <!--Galeria-->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!--Navbar gallery-->
         <div class="uk-flex uk-flex around uk-flex-middle uk-box-shadow-medium">
             <div class="uk-width-1-2 uk-flex uk-flex-center">
@@ -807,8 +808,20 @@
                         <i class="fas fa-star uk-margin-remove color-yellow-star"></i>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-center">
-                    <img class="size-img-galery" src="./data/img-galery.png" alt="">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                    <ul class="uk-slideshow-items" style="height: 350px; width: 360px;">
+                        <li>
+                            <img data-src="./data/img-galery.png" width="1150" height="1100" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                        </li>
+                        <li>
+                            <img data-src="./data/img-galery.png" width="1150" height="1100" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                        </li>
+                        <li>
+                            <img data-src="./data/img-galery.png" width="1150" height="1100" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: black; background-color: rgba(255, 255, 255, 0.589);" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: black; background-color: rgba(255, 255, 255, 0.589);" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div>
                 <div style="position: absolute;">
                     <div class="uk-flex uk-flex-middle">

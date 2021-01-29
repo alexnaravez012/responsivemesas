@@ -241,6 +241,10 @@
     background-size: 100% auto;
 }
 
+.img-items-products:hover {
+    border: 1px solid black;
+}
+
 .img-items-products-add {
     min-width: 120px;
     max-width: 120px;
