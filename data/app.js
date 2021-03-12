@@ -3,42 +3,42 @@ function openMenu(type) {
     let higthMax = bodyHeight.scrollHeight
     console.log(higthMax + "px !important")
 
-    if (type == 'user') {
-        document.getElementById("menu-users").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-users").classList.toggle("show");
-        document.getElementById("menu-options").classList.remove("show");
-        document.getElementById("menu-information").classList.remove("show");
+    if (type == 'user-tables-responsive') {
+        document.getElementById("menu-users-tables-responsive").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-users-tables-responsive").classList.toggle("show");
+        document.getElementById("menu-options-tables-responsive").classList.remove("show");
+        document.getElementById("menu-information-tables-responsive").classList.remove("show");
 
     }
-    if (type == 'options') {
-        document.getElementById("menu-options").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-users").classList.remove("show");
-        document.getElementById("menu-options").classList.toggle("show");
-        document.getElementById("menu-information").classList.remove("show");
+    if (type == 'options-tables-responsive') {
+        document.getElementById("menu-options-tables-responsive").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-users-tables-responsive").classList.remove("show");
+        document.getElementById("menu-options-tables-responsive").classList.toggle("show");
+        document.getElementById("menu-information-tables-responsive").classList.remove("show");
     }
-    if (type == 'information') {
-        document.getElementById("menu-information").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-information").classList.toggle("show");
-        document.getElementById("menu-users").classList.remove("show");
+    if (type == 'information-tables-responsive') {
+        document.getElementById("menu-information-tables-responsive").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-information-tables-responsive").classList.toggle("show");
+        document.getElementById("menu-users-tables-responsive").classList.remove("show");
         document.getElementById("menu-options").classList.remove("show");
     }
-    if (type == 'categories') {
-        document.getElementById("menu-categories").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-categories").classList.toggle("show");
+    if (type == 'categories-tables-responsive') {
+        document.getElementById("menu-categories-tables-responsive").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-categories-tables-responsive").classList.toggle("show");
     }
-    if (type == 'subcategories') {
-        document.getElementById("menu-subcategories").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-subcategories").classList.toggle("show");
+    if (type == 'subcategories-tables-responsive') {
+        document.getElementById("menu-subcategories-tables-responsive").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-subcategories-tables-responsive").classList.toggle("show");
     }
 }
 
 function repeatMenu() {
-    let divScroll = document.getElementById('div-scroll')
+    let divScroll = document.getElementById('div-scroll-tables-responsive')
     let higthMax = divScroll.scrollHeight - 300
     let higth = divScroll.scrollTop
     if (higthMax == higth) {
         let div = document.createElement('div');
-        document.getElementById('list-user').innerHTML += `<div>
+        document.getElementById('list-user-tables-responsive').innerHTML += `<div>
         <li class=" uk-margin-remove uk-flex uk-flex-middle cursor-pointer items-menu">
             <img src="data/1.png " alt=" ">
             <h4 class="uk-text-bold uk-margin-remove color-blue">Ventas</h4>

@@ -6,17 +6,17 @@
     color: green;
 }
 
-.logo2-size {
+.logo-store-size-tables-responsive {
     height: 80%;
     width: 80%;
 }
 
-.logo1-size {
+.logo-navbar-size-tables-responsive {
     height: 90px;
     width: 240px;
 }
 
-.logo13-size {
+.logo-info-size-tables-responsive {
     height: 90%;
     width: 90%;
 }
@@ -50,7 +50,7 @@
     padding-left: 5px;
 }
 
-.buttom-search {
+.button-search-tables-responsive {
     border-radius: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -59,7 +59,7 @@
     font-size: 12px;
 }
 
-.form-search {
+.form-search-tables-responsive {
     color: grey !important;
     border-bottom: 1px solid grey;
     font-size: 18px;
@@ -102,7 +102,7 @@
     border-bottom: 1px solid rgb(54, 54, 54);
 }
 
-.form-select {
+.form-select-tables-responsive {
     color: grey !important;
     border-bottom: 1px solid black;
     border-top: 0px solid #3a6193;
@@ -163,13 +163,13 @@
     width: 100%;
 }
 
-.button-menu {
+.button-menus-navbar-tables-responsive {
     background-color: white;
     border: none;
     padding-right: 35px;
 }
 
-.select-items {
+.select-items-tables-responsive {
     position: absolute;
     top: 100%;
     left: 0;
@@ -178,13 +178,13 @@
     width: 300px !important;
 }
 
-.dropdown-buttom {
+.dropdown-button-tables-responsive {
     border: none;
     background: none;
     width: 100%;
 }
 
-.buttom-search-cat {
+.button-search-cat-tables-responsive {
     border-radius: 20px;
     border: 1px black solid;
     font-size: 16px;
@@ -192,17 +192,17 @@
     height: 40px;
 }
 
-.button-select-search-option {
+.button-select-search-option-tables-responsive {
     width: 200px;
     height: 80px;
 }
 
-.button-select-search-cat {
+.button-select-search-cat-tables-responsive {
     width: 250px;
     height: 80px;
 }
 
-.img-size-1 {
+.bag-buy-box-green-tables-responsive {
     width: 45px;
     height: 45px;
 }
@@ -214,14 +214,14 @@
     margin-bottom: 10px;
 }
 
-.background-green-buy {
+.background-green-buy-tables-responsive {
     background-color: #98FB98;
     border-radius: 5px;
     width: 100px;
     padding-right: 20px;
 }
 
-.text-img-buy {
+.text-img-buy-tables-responsive {
     color: black;
     left: 15px;
     bottom: -10px;
@@ -233,7 +233,7 @@
     top: 20px;
 }
 
-.img-items-products {
+.img-items-products-tables-responsive {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -245,7 +245,7 @@
     border: 1px solid black;
 }
 
-.img-items-products-add {
+.img-items-products-add-tables-responsive {
     min-width: 120px;
     max-width: 120px;
     width: 120px;
@@ -255,20 +255,20 @@
     background-size: 100% auto;
 }
 
-.buttom-add {
+.button-add-tables-responsive {
     border-radius: 10px;
     color: rgb(15, 121, 15);
     margin-left: 10px;
 }
 
-.like-size {
+.like-size-tables-responsive {
     top: 70px;
     left: 70px;
     height: 70px;
     width: 70px;
 }
 
-.discount {
+.discount-add-tables-responsive {
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -317,7 +317,7 @@
     color: white;
 }
 
-.background-menus {
+.background-menus-tables-responsive {
     z-index: 300;
     position: absolute;
     width: 100% !important;
@@ -333,7 +333,7 @@
     display: block;
 }
 
-.style-menu-bars {
+.style-menu-bars-tables-responsive {
     background-color: white;
     margin-left: 90px;
     border-bottom-left-radius: 10px;
@@ -343,7 +343,7 @@
     padding-top: 20px;
 }
 
-.style-menu-categories {
+.style-menu-categories-tables-responsive {
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -352,14 +352,14 @@
     padding-bottom: 0px;
 }
 
-.style-menu-users {
+.style-menu-users-tables-responsive {
     background-color: white;
     margin-left: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.style-overflow-ventas {
+.style-overflow-ventas-tables-responsive {
     width: 100%;
     padding-top: 20px;
     padding-left: 10px;
@@ -370,7 +370,7 @@
     border-bottom-right-radius: 10px;
 }
 
-.style-menu-information {
+.style-menu-information-tables-responsive {
     background-color: white;
     margin-left: 100px;
     border-bottom-left-radius: 10px;
@@ -380,12 +380,12 @@
     padding-top: 20px;
 }
 
-.items-menu {
+.items-menu-tables-responsive {
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-.items-menu:hover {
+.items-menu-tables-responsive:hover {
     background-color: rgb(167, 238, 167);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -398,16 +398,16 @@
     border-right: 100px;
 }
 
-.item-list {
+.item-list-tables-responsive {
     background-color: white;
-    font-size: 12px;
+    font-size: 19px;
     text-align: center;
     margin: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.item-list:hover {
+.item-list-tables-responsive:hover {
     background-color: gray;
     color: white !important;
 }
@@ -470,7 +470,7 @@
     border: none;
 }
 
-.card-table-responsive {
+.cards-tables-responsive {
     padding-left: 10px !important;
     padding-right: 10px !important;
     padding-top: 20px !important;
@@ -490,14 +490,14 @@
     background-color: rgb(145, 233, 240) !important;
 }
 
-.modal-card-responsive {
+.modal-cards-tables-responsive {
     width: 310px !important;
     height: auto;
     border-radius: 30px;
     margin-top: 250px;
 }
 
-.button-modal-responsive {
+.button-modal-tables-responsive {
     height: 40px;
     width: 150px;
     border-radius: 15px;
@@ -545,7 +545,7 @@
     box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.10);
 }
 
-.button-finish-order {
+.button-finish-order-tables-responsive {
     background-color: #B1FFA6;
     border: none;
     width: 350px;
@@ -618,13 +618,13 @@
     margin-top: 250px;
 }
 
-.modal-process-order-responsive {
+.modal-process-order-tables-responsive {
     border-radius: 15px;
     width: 400px !important;
     margin-top: 250px;
 }
 
-.button-modal-cancel-responsive {
+.button-modal-cancel-tables-responsive {
     height: 38px;
     width: 200px;
     border-radius: 10px;
@@ -638,31 +638,31 @@
     outline: 0;
 }
 
-.img-size-buy-car {
+.img-size-gallery-bag-tables-responsive {
     width: 35px;
     height: 35px;
 }
 
-.background-green-buy-galery {
+.background-green-buy-gallery-tables-responsive {
     background-color: #98FB98;
     border-radius: 5px;
     width: 100px;
     height: 50px;
 }
 
-.text-img-buy-galery {
+.text-img-buy-gallery-tables-responsive {
     color: black;
     left: 22px;
     bottom: -13px;
 }
 
-.background-grey-galery {
+.background-grey-gallery-tables-responsive {
     background-color: #F2F2F2;
     height: 450px;
     width: 100%;
 }
 
-.color-yellow-star {
+.color-yellow-star-tables-responsive {
     color: #E69D2F;
 }
 
@@ -671,7 +671,7 @@
     width: 350px;
 }
 
-.img-items-galery {
+.img-items-gallery-tables-responsive {
     height: 90px;
     width: 85px;
     border-radius: 20px;
@@ -681,7 +681,7 @@
     margin: 5px;
 }
 
-.button-galery-options {
+.button-gallery-options-tables-responsive {
     border: 1px solid black;
     border-radius: 10px;
     height: 25px;
@@ -689,19 +689,19 @@
     padding-top: 5px;
 }
 
-.box-green {
+.box-green-gallery-tables-responsive {
     background-color: #B1FFA6;
     height: 60px;
     width: 180px;
     border-radius: 5px;
 }
 
-.size-shopping-cart {
+.size-shopping-bag-tables-responsive {
     height: 40px;
     width: 40px;
 }
 
-.img-items-galery-relation {
+.img-items-gallery-relation-tables-responsive {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -710,7 +710,7 @@
     margin: 5px;
 }
 
-.scrollhorizontal {
+.scrollhorizontal-tables-responsive {
     width: calc(100% - 40px);
     margin: 20px;
     overflow-x: scroll;
@@ -728,17 +728,17 @@
 }
 
 .scrollhorizontal::-webkit-scrollbar-thumb {
-    background: #c2c2c2;
+    background: #dfdfdf;
     border: 10px none #ffffff;
     border-radius: 85px;
 }
 
 .scrollhorizontal::-webkit-scrollbar-thumb:hover {
-    background: #8f8f8f;
+    background: #d6d6d6;
 }
 
 .scrollhorizontal::-webkit-scrollbar-thumb:active {
-    background: #3d3d3d;
+    background: #c2c2c2;
 }
 
 .scrollhorizontal::-webkit-scrollbar-track {
@@ -752,7 +752,7 @@
 }
 
 .scrollhorizontal::-webkit-scrollbar-track:active {
-    background: #adadad;
+    background: #d1d1d1;
 }
 
 .scrollhorizontal::-webkit-scrollbar-corner {
